@@ -1,12 +1,16 @@
 {
   "dependencies": {},
   "devDependencies": {
+    "prettier": "^3.3.3",
+    "rimraf": "^6.0.1",
     "vitepress": "^1.4.0",
     "vue": "^3.5.12"
   },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
-    "docs:preview": "vitepress preview"
+    "docs:preview": "vitepress preview",
+    "clean": "rimraf docs/.vitepress/cache",
+    "dev:clean": "bun run clean && bun run docs:dev"
   }
 }
