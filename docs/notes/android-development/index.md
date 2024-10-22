@@ -1,9 +1,11 @@
 ---
 next:
-  text: 'Materi 1'
-  link: '/notes/android-development/materi-1'
+  text: '1.1 Syntax (Variables, Data Types, Functions)'
+  link: '/notes/android-development/section-1-1'
 ---
 
-# Android Development
+![Flutter Banner](../../public/assets/android-development/flutter-banner.webp)
 
-Selamat Datang di Modul Android Development
+# Android Development (Flutter)
+
+Kucing meong meong...
