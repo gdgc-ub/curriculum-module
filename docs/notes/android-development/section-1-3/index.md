@@ -165,6 +165,162 @@ void main() {
 - **Flexibility**: Polymorphism allows for writing more flexible and reusable code. For instance, a function can take different object types, making the code adaptable to different scenarios.
 - **Simplified Code**: Polymorphism can simplify code by allowing the same method name to be used for different types.
 
-## Case Study
+## Case Study: Basic Bank Account Application
 
-Coming soon...
+### Introduction
+
+The goal of this case study is to develop a simple bank account application that allows users to create accounts, deposit money, withdraw money, and check account balances. We will utilize Object-Oriented Programming (OOP) principles to create a modular and maintainable application.
+
+### Problem Statement
+
+The Bank Account Application should allow:
+
+1. Creating a new bank account.
+2. Depositing funds into the account.
+3. Withdrawing funds from the account.
+4. Checking the current balance.
+5. Implementing different types of accounts (e.g., Savings Account, Checking Account).
+
+### Design
+
+The application will consist of the following classes:
+
+- `BankAccount`: A base class representing a generic bank account.
+- `SavingsAccount`: A subclass that extends `BankAccount`, with additional features such as interest calculation.
+- `CheckingAccount`: Another subclass that may include features specific to checking accounts (e.g., overdraft protection).
+- `Customer`: A class representing a bank customer.
+
+### Implementation
+
+Below is the implementation of the basic bank account application in Dart:
+
+```dart
+// Base class for Bank Account
+abstract class BankAccount {
+  String accountNumber;
+  String accountHolder;
+  double _balance;
+
+  BankAccount(this.accountNumber, this.accountHolder, this._balance);
+
+  // Method to deposit money
+  void deposit(double amount) {
+    if (amount > 0) {
+      _balance += amount;
+      print('Deposited: \$${amount.toStringAsFixed(2)}');
+    } else {
+      print('Invalid deposit amount.');
+    }
+  }
+
+  // Method to withdraw money
+  bool withdraw(double amount) {
+    if (amount > 0 && amount <= _balance) {
+      _balance -= amount;
+      print('Withdrawn: \$${amount.toStringAsFixed(2)}');
+      return true;
+    } else {
+      print('Insufficient funds or invalid amount.');
+      return false;
+    }
+  }
+
+  // Method to check balance
+  double getBalance() {
+    return _balance;
+  }
+
+  // Method to display account information
+  void displayInfo() {
+    print('Account Number: $accountNumber');
+    print('Account Holder: $accountHolder');
+    print('Current Balance: \$${_balance.toStringAsFixed(2)}');
+  }
+}
+
+// Subclass for Savings Account
+class SavingsAccount extends BankAccount {
+  double interestRate;
+
+  SavingsAccount(String accountNumber, String accountHolder, double balance, this.interestRate)
+      : super(accountNumber, accountHolder, balance);
+
+  // Method to calculate interest
+  void addInterest() {
+    double interest = getBalance() * (interestRate / 100);
+    deposit(interest);
+    print('Interest added: \$${interest.toStringAsFixed(2)}');
+  }
+}
+
+// Subclass for Checking Account
+class CheckingAccount extends BankAccount {
+  double overdraftLimit;
+
+  CheckingAccount(String accountNumber, String accountHolder, double balance, this.overdraftLimit)
+      : super(accountNumber, accountHolder, balance);
+
+  @override
+  bool withdraw(double amount) {
+    if (amount > 0 && (getBalance() + overdraftLimit) >= amount) {
+      return super.withdraw(amount);
+    } else {
+      print('Withdrawal exceeds overdraft limit.');
+      return false;
+    }
+  }
+}
+
+// Customer class to hold account information
+class Customer {
+  String name;
+  List<BankAccount> accounts = [];
+
+  Customer(this.name);
+
+  // Method to add account to customer
+  void addAccount(BankAccount account) {
+    accounts.add(account);
+    print('${account.runtimeType} created for $name.');
+  }
+
+  // Method to display all accounts
+  void displayAccounts() {
+    print('$name\'s Accounts:');
+    for (var account in accounts) {
+      account.displayInfo();
+      print('----------------------------------');
+    }
+}
+
+void main() {
+  // Create a customer
+  Customer customer = Customer('John Doe');
+
+  // Create accounts
+  SavingsAccount savingsAccount = SavingsAccount('SA001', 'John Doe', 1000.0, 5.0);
+  CheckingAccount checkingAccount = CheckingAccount('CA001', 'John Doe', 500.0, 200.0);
+
+  // Add accounts to customer
+  customer.addAccount(savingsAccount);
+  customer.addAccount(checkingAccount);
+
+  // Display accounts
+  customer.displayAccounts();
+
+  // Perform transactions
+  savingsAccount.deposit(200.0);
+  savingsAccount.withdraw(100.0);
+  savingsAccount.addInterest();
+
+  checkingAccount.withdraw(600.0); // Should succeed due to overdraft
+  checkingAccount.withdraw(200.0); // Should fail due to insufficient funds
+
+  // Display updated account balances
+  customer.displayAccounts();
+}
+```
+
+### Online Playground
+
+You can run and test the code in this online playground: [JDoodle](https://www.jdoodle.com/execute-dart-online).

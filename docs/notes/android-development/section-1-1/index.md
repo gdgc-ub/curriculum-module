@@ -188,6 +188,121 @@ fruits.forEach((fruit) {
 });
 ```
 
-## Case Study
+## Case Study: Simple Calculator Program in Dart
 
-Coming soon...
+### Introduction
+
+In this case study, we will design and implement a simple calculator program using Dart. This calculator will perform basic arithmetic operations, including addition, subtraction, multiplication, and division. The goal is to provide users with an interactive command-line interface to input numbers and choose operations.
+
+### Problem Statement
+
+The calculator needs to perform the following operations based on user input:
+
+- Addition
+- Subtraction
+- Multiplication
+- Division
+
+### Requirements
+
+1. The program should prompt the user to enter two numbers.
+2. The user should select an arithmetic operation (addition, subtraction, multiplication, or division).
+3. The program should display the result of the operation.
+4. It should handle invalid input gracefully, informing the user of any errors.
+
+### Design
+
+The calculator will be designed with the following components:
+
+- A function to perform the chosen arithmetic operation.
+- A function to display the menu and get user input.
+- A main function to drive the application and handle control flow.
+
+### Implementation
+
+Below is the Dart code implementing the calculator:
+
+```dart
+import 'dart:io';
+
+double add(double a, double b) {
+  return a + b;
+}
+
+double subtract(double a, double b) {
+  return a - b;
+}
+
+double multiply(double a, double b) {
+  return a * b;
+}
+
+double divide(double a, double b) {
+  if (b == 0) {
+    throw Exception('Cannot divide by zero');
+  }
+  return a / b;
+}
+
+void showMenu() {
+  print('Select an operation:');
+  print('1. Addition (+)');
+  print('2. Subtraction (-)');
+  print('3. Multiplication (*)');
+  print('4. Division (/)');
+  print('5. Exit');
+}
+
+void main() {
+  while (true) {
+    showMenu();
+    String? choice = stdin.readLineSync();
+
+    if (choice == '5') {
+      print('Exiting the calculator. Goodbye!');
+      break;
+    }
+
+    print('Enter the first number:');
+    double? num1 = double.tryParse(stdin.readLineSync()!);
+    print('Enter the second number:');
+    double? num2 = double.tryParse(stdin.readLineSync()!);
+
+    if (num1 == null || num2 == null) {
+      print('Invalid input. Please enter valid numbers.');
+      continue;
+    }
+
+    double result;
+
+    switch (choice) {
+      case '1':
+        result = add(num1, num2);
+        print('Result: $num1 + $num2 = $result');
+        break;
+      case '2':
+        result = subtract(num1, num2);
+        print('Result: $num1 - $num2 = $result');
+        break;
+      case '3':
+        result = multiply(num1, num2);
+        print('Result: $num1 * $num2 = $result');
+        break;
+      case '4':
+        try {
+          result = divide(num1, num2);
+          print('Result: $num1 / $num2 = $result');
+        } catch (e) {
+          print(e);
+        }
+        break;
+      default:
+        print('Invalid choice. Please select a valid operation.');
+    }
+  }
+}
+```
+
+### Online Playground
+
+You can run and test the code in this online playground: [JDoodle](https://www.jdoodle.com/execute-dart-online).

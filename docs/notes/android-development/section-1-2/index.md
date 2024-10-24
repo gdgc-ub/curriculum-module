@@ -107,6 +107,99 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
-## Case Study
+## Case Study: Number Guessing Game
 
-Coming soon...
+### Introduction
+
+In this case study, we will develop a simple number guessing game using Dart. The game will allow the player to guess a randomly generated number within a specified range. This project will illustrate the practical application of **loops**, **conditional statements**, and user input handling in Dart.
+
+### Problem Statement
+
+The program must:
+
+- Generate a random number between 1 and 100.
+- Prompt the user to guess the number.
+- Provide feedback on whether the guess is too low, too high, or correct.
+- Allow the user to continue guessing until they find the correct number.
+- Count the number of attempts taken by the player.
+
+### Requirements
+
+1. Generate a random number between 1 and 100 at the start of the game.
+2. Prompt the user for their guess.
+3. Provide feedback for each guess:
+   - If the guess is too low, display "Too low! Try again."
+   - If the guess is too high, display "Too high! Try again."
+   - If the guess is correct, display "Congratulations! You've guessed the number in X attempts."
+4. Allow the user to play multiple rounds until they choose to exit.
+
+### Design
+
+The program will:
+
+- Use a loop to allow repeated guessing until the user gets the correct answer.
+- Utilize conditionals to provide feedback based on the user's guess.
+- Implement random number generation to create a new number for each game round.
+
+### Implementation
+
+Here’s the Dart code for the number guessing game:
+
+```dart
+import 'dart:io';
+import 'dart:math';
+
+void main() {
+  Random random = Random();
+
+  while (true) {
+    // Generate a random number between 1 and 100
+    int numberToGuess = random.nextInt(100) + 1;
+    int attempts = 0;
+    bool hasGuessedCorrectly = false;
+
+    print('Welcome to the Number Guessing Game!');
+    print('I have selected a number between 1 and 100. Try to guess it!');
+
+    while (!hasGuessedCorrectly) {
+      print('Enter your guess (or type "exit" to quit):');
+      String? input = stdin.readLineSync();
+
+      if (input?.toLowerCase() == 'exit') {
+        print('Thanks for playing! Goodbye!');
+        return;
+      }
+
+      int? guess = int.tryParse(input!);
+
+      if (guess == null || guess < 1 || guess > 100) {
+        print('Invalid input. Please enter a number between 1 and 100.');
+        continue;
+      }
+
+      attempts++;
+
+      if (guess < numberToGuess) {
+        print('Too low! Try again.');
+      } else if (guess > numberToGuess) {
+        print('Too high! Try again.');
+      } else {
+        hasGuessedCorrectly = true;
+        print('Congratulations! You\'ve guessed the number $numberToGuess in $attempts attempts.');
+      }
+    }
+
+    print('Do you want to play again? (yes/no)');
+    String? playAgain = stdin.readLineSync();
+
+    if (playAgain?.toLowerCase() != 'yes') {
+      print('Thanks for playing! Goodbye!');
+      break;
+    }
+  }
+}
+```
+
+### Online Playground
+
+You can run and test the code in this online playground: [JDoodle](https://www.jdoodle.com/execute-dart-online).
