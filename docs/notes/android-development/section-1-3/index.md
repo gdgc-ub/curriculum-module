@@ -6,6 +6,8 @@ next:
 
 # 1.3 OOP Concepts (Classes, Objects, Inheritance, Encapsulation, and Polymorphism)
 
+> Explore object-oriented programming, which is a core principle in Flutter app development.
+
 Object-Oriented Programming (OOP) is a programming paradigm centered around the concept of "objects," which encapsulate data and behavior. Dart, a modern programming language developed by Google, embraces OOP principles, making it suitable for building robust applications across various platforms. This section explores the fundamental OOP concepts in Dart: Classes, Objects, Inheritance, Encapsulation, and Polymorphism.
 
 ## Classes

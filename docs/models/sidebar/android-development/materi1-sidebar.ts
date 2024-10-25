@@ -1,10 +1,14 @@
 // https://vitepress.dev/reference/default-theme-sidebar
 export const materi1Sidebar = [
   {
-    text: 'Android Development',
+    text: 'Onboarding👋',
     items: [
       {
         text: '- Introduction',
+        link: 'notes/android-development/index',
+      },
+      {
+        text: '- Roadmap',
         link: 'notes/android-development/index',
       },
     ],

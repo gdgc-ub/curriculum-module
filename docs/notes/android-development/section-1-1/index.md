@@ -6,6 +6,8 @@ next:
 
 # 1.1 Syntax (Variables, Data Types, Functions)
 
+> Learn how to declare variables, define functions, and work with different data types.
+
 Dart, the programming language designed by Google, has a clean, modern syntax that is easy to understand and use. In this article, we will explore the foundational concepts of Dart syntax, focusing on **variables**, **data types**, and **functions**. Understanding these basics is essential for anyone looking to develop mobile applications using Dart, especially in combination with Flutter for Android development.
 
 ## Variables in Dart

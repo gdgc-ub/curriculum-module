@@ -6,6 +6,8 @@ next:
 
 # 1.2 Control Flow (if-else, switch, loops)
 
+> Understand how to make decisions in your code and repeat actions using loops.
+
 In any programming language, control flow statements allow you to dictate how the program moves from one point to another based on conditions or repetitive actions. Dart, like most languages, offers several control flow constructs including **`if-else` statements**, **`switch` statements**, and various types of **loops** (for, while, do-while). This section will cover the basic usage of each in Dart.
 
 ## if-else Statements
