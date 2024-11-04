@@ -1,11 +1,11 @@
 import { defineConfig } from 'vitepress'
 // Sidebar
 import { materi1Sidebar as WebMateri1Sidebar } from '../models/sidebar/web-development/materi1-sidebar'
-import { materi1Sidebar as PMMateri1Sidebar } from '../models/sidebar/product-management/materi1-sidebar'
 import { materi1Sidebar as MLMateri1Sidebar } from '../models/sidebar/machine-learning/materi1-sidebar'
 import { materi1Sidebar as CloudMateri1Sidebar } from '../models/sidebar/cloud-development/materi1-sidebar'
 import { materi1Sidebar as AndroidMateri1Sidebar } from '../models/sidebar/android-development/materi1-sidebar'
 import { uiUXSidebar } from '../models/sidebar/ui-ux/UIUXSidebar'
+import { PMSidebar } from '../models/sidebar/product-management/pmSidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -26,7 +26,7 @@ export default defineConfig({
 
     sidebar: {
       "/notes/ui-ux": uiUXSidebar,
-      "/notes/product-management": PMMateri1Sidebar,
+      "/notes/product-management": PMSidebar,
       "/notes/cloud-development": CloudMateri1Sidebar,
       "/notes/android-development": AndroidMateri1Sidebar,
       "/notes/web-development": WebMateri1Sidebar,
