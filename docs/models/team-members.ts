@@ -1,7 +1,7 @@
 // For Future curriculum, please don't erase previous curriculum
 export const members = [
     {
-      avatar: '../public/assets/team-member/faiz.png',
+      avatar: 'https://utfs.io/f/UITLvNJrhEOFGQK4dNFrpZP3Qd41iVCDb6O0nm9BFJ8Nx5hs',
       name: 'Ahnad Faiz Agustianto',
       title: 'Curriculum Lead',
       links: [
@@ -11,7 +11,7 @@ export const members = [
       ]
     },
     {
-      avatar: '../public/assets/team-member/deta.png',
+      avatar: 'https://utfs.io/f/UITLvNJrhEOFSiRP6jQdXy9ZjpFl4iWJ8NbOxUBfcqvKa1wQ',
       name: 'Bernadeta Regina Kusumawardhani',
       title: 'Product Management',
       links: [
@@ -20,7 +20,7 @@ export const members = [
       ]
     },
     {
-      avatar: '../public/assets/team-member/rara.png',
+      avatar: 'https://utfs.io/f/UITLvNJrhEOFp7Cm98T6o1u0vmsBTlFLpZwWUaEyfiOhdzAb',
       name: 'Nareswara Lintang Kirana',
       title: 'UI/UX',
       links: [
@@ -29,7 +29,7 @@ export const members = [
       ]
     },
     {
-      avatar: '../public/assets/team-member/indra.png',
+      avatar: 'https://utfs.io/f/UITLvNJrhEOFDIZFsDUzFolKDyJCv0c25WR13mIAMpYZgGnx',
       name: 'Gede Indra Adi Brata',
       title: 'Cloud Development',
       links: [
@@ -39,7 +39,7 @@ export const members = [
       ]
     },
     {
-      avatar: '../public/assets/team-member/elgin.png',
+      avatar: 'https://utfs.io/f/UITLvNJrhEOFGAjJWiFrpZP3Qd41iVCDb6O0nm9BFJ8Nx5hs',
       name: 'Elgin Brian Wahyu Bramadhika',
       title: 'Android Development',
       links: [
@@ -49,7 +49,7 @@ export const members = [
       ]
     },
     {
-      avatar: '../public/assets/team-member/nickolas.png',
+      avatar: 'https://utfs.io/f/UITLvNJrhEOFDpPGDZUzFolKDyJCv0c25WR13mIAMpYZgGnx',
       name: 'Nickolas Budiyono',
       title: 'Web Development',
       links: [
@@ -58,7 +58,7 @@ export const members = [
       ]
     },
     {
-      avatar: '../public/assets/team-member/rafly.png',
+      avatar: 'https://utfs.io/f/UITLvNJrhEOFhtALQF7zC7MeJAiI5boRngd02ZLFGKB1DO8f',
       name: 'Muhammad Rafly Ash Shiddiqi',
       title: 'Machine Learning',
       links: [
