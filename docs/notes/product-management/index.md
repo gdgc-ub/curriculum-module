@@ -17,6 +17,9 @@ Basically, Product Manager is the bridge between the business, User Experience (
 
 ![Introduction](../../public/assets/product-management/introduction.webp)
 
+Source: *https://revou.co/panduan-karir/apa-itu-product-manager*
+
+
 - **Business** -->  A Product Manager needs to focus on optimizing the product to meet business goals, such as increasing profits, etc.
 - **Technology** --> In choosing the product to be developed, the Product Manager needs to understand the development process and the proper utilization of technology for users.
 - **UX** --> The Product Manager needs to ensure that the product has a good user experience. Although it is not essential to be a designer, the ability to test products, interact directly with users, and get feedback is very important for a PM to maximize the quality of the product developed so that it is comfortable to use by users.

@@ -19,6 +19,7 @@ After knowing the user's problem, it's time to offer a solution that can solve t
 - **Customer-Solution Fit:**<br /> You see if early users find your solution useful and appealing by testing it with a Minimum Viable Product (MVP).
 
 ![Problem Solution Fit](../../../../public/assets/product-management/problem-solution-fit.webp)
+Source: *https://www.feedough.com/problem-solution-fit/*
 
 The problem-solution fit precedes the product development and forms the foundation upon which a company is built. It helps you answer the basics startup-related questions before you even start your startup.
 
@@ -37,6 +38,7 @@ A solid Problem-Solution Fit means you can move ahead confidently, knowing that 
 **Then, what’s the difference between Product-Solution Fit and Problem-Market Fit?**
 
 ![Problem vs Market Fit](../../../../public/assets/product-management/solution-vs-market-fit.png)
+Source: *https://www.feedough.com/problem-solution-fit/*
 
 Similar but different. Product-Solution fit means solutions that are provided in our product solve users’ problems. Product-market fit means proving that people genuinely want and need your product or service to solve their problem.
 

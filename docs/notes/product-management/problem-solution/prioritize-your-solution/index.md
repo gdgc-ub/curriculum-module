@@ -21,6 +21,7 @@ Kita dapat membuat prioritas solusi. Ada beberapa teknik prioritas yang dapat di
 Many people prefer the RICE scoring system because it considers confidence in a simple way, but it still leaves some uncertainty. MoSCoW is helpful for Product Managers as it highlights what is important to both customers and stakeholders, making it easier to manage expectations.
 
 ![Rice Method](../../../../public/assets/product-management/rice-method.png)
+Source : *https://roadmunk.com/guides/product-prioritization-techniques-product-managers/*
 
 ### Reach
 
@@ -39,16 +40,19 @@ A confidence percentage expresses how secure team members feel about their asses
 Considering effort helps balance cost and benefit. In an ideal world, everything would be high-impact/low-effort, although this is rarely the case. Calculate the time it will take the team (designers, engineers, etc.) to execute the idea.
 
 ![Rice Score](../../../../public/assets/product-management/rice-score.png)
+Source: *https://roadmunk.com/guides/product-prioritization-techniques-product-managers/*
 
 These individual numbers are combined into one total score using a formula. This score gives product teams a consistent way to compare different projects or tasks when planning what to add to their roadmap. You can look at the example below.
 
 ![Rice Example](../../../../public/assets/product-management/rice-example.png)
+Source: *https://roadmunk.com/guides/product-prioritization-techniques-product-managers/* 
 
 ## Impact-Effort Metrics
 
 The Impact-Effort Matrix is similar to the RICE method but is better for people who prefer visual tools. This matrix shows how valuable (impact) a feature is for the user compared to how difficult (effort) it is to develop. To use this matrix, the Product Owner lists all features or ideas, and the team votes on where to place them on the impact and effort scale. Each feature ends up in one of four categories:
 
 ![Impact Effort Matrix](../../../../public/assets/product-management/impact-effort-matrix.png)
+Source: *https://www.bitesizelearning.co.uk/resources/impact-vs-effort-matrix-explanation-template*
 
 ### Quick wins
 
@@ -72,6 +76,7 @@ The MosCow Method is a four-step process for prioritizing product requirements a
 Here’s a breakdown of the model:
 
 ![MosCow Method](../../../../public/assets/product-management/moscow-method.webp)
+Source: *https://www.projectcubicle.com/what-is-moscow-analysis-and-moscow-method/*
 
 ### Must Have (M)
 
@@ -92,6 +97,7 @@ These requirements aren’t a priority for the project.
 If you are still confused, you can look at the example below for better understanding.
 
 ![MosCow Example](../../../../public/assets/product-management/moscow-example.png)
+Source: *https://www.stryvemarketing.com/blog/prioritization-frameworks/*
 
 ## Then, what framework should I use?
 

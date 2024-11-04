@@ -28,3 +28,5 @@ Here I will spill the tea for you
 If we talk about the Product Manager career path, of course each level has different responsibilities.
 
 ![Responsibilities](../../../../public/assets/product-management/responsibilities.webp)
+
+Source: *https://theproductmanager.com/topics/product-management-roles-and-responsibilities/*

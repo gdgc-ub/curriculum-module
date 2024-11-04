@@ -13,6 +13,7 @@ outline: 'deep'
 # Skill Needed as Product Manager
 
 ![Skills](../../../../public/assets/product-management/skills.webp)
+Source : *https://productschool.com/blog/skills/product-manager-skills*
 
 ## PM’s Hardskill
 
@@ -42,6 +43,7 @@ Product managers need to understand the Software Development Life Cycle concept.
 Knowing the product life cycle is important for a product manager because it helps them guide the product from start to finish effectively. Understanding each stage—such as idea generation, development, launch, and post-launch improvements—allows them to plan, anticipate challenges, and make decisions that align with the product’s strategy and market needs. It helps them manage timelines, allocate resources, and ensure smooth transitions between stages.
 
 ![Top 10 Skills](../../../../public/assets/product-management/top-10-skills.png)
+Source : *https://theproductmanager.com/topics/product-manager-skills/*
 
 ## PM’s Softskill
 
