@@ -76,6 +76,20 @@ export const materi1Sidebar = [
   },
 
   {
+    text: '4) State Management🚩',
+    items: [
+      {
+        text: '4.1 Local State',
+        link: '',
+      },
+      {
+        text: '4.2 Provider',
+        link: '',
+      },
+    ],
+  },
+
+  {
     text: 'There will be more to come...',
     items: [],
   },
