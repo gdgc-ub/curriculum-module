@@ -10,28 +10,64 @@ next:
 
 In Flutter, layout is a critical component for crafting engaging user interfaces. Flutter offers a variety of layout widgets that allow developers to position and organize widgets on the screen effectively. This article focuses on three fundamental layout widgets: **Column**, **Row**, and **Stack**. Each widget serves a unique purpose and can be combined to create complex UI designs.
 
+::: details Overview of the Materials 📚
+
+- **Column:** Organizes children vertically. Best for forms, vertical lists, or stacked components.
+- **Row:** Organizes children horizontally. Ideal for horizontal layouts, like navigation bars or toolbars.
+- **Stack:** Overlays children on top of each other. Used for complex visual designs where elements overlap.
+
+:::
+
 ## Column
+
+![Column Widget](../../../public/assets/android-development/column-widget.png)
 
 The **Column** widget arranges its children in a vertical direction. It takes a list of widgets and positions them one below the other, allowing for flexible vertical layouts.
 
 ```dart
-Container(
-  color: Colors.blue,
-  height: 100,
-  child: Center(child: Text('Column Item 1', style: TextStyle(color: Colors.white))),
-),
+import 'package:flutter/material.dart';
 
-Container(
-  color: Colors.green,
-  height: 100,
-  child: Center(child: Text('Column Item 2', style: TextStyle(color: Colors.white))),
-),
+class MyColumnWidget extends StatelessWidget {
+  const MyColumnWidget({super.key});
 
-Container(
-  color: Colors.red,
-  height: 100,
-  child: Center(child: Text('Column Item 3', style: TextStyle(color: Colors.white))),
-),
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: [
+        Container(
+          color: Colors.blue,
+          height: 100,
+          child: const Center(
+            child: Text(
+              'Column Item 1',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
+        Container(
+          color: Colors.green,
+          height: 100,
+          child: const Center(
+            child: Text(
+              'Column Item 2',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
+        Container(
+          color: Colors.red,
+          height: 100,
+          child: const Center(
+            child: Text(
+              'Column Item 3',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
 ```
 
 ### Key Properties
@@ -55,32 +91,58 @@ The Column widget is ideal for creating vertical lists, forms, or any UI element
 
 ## Row
 
+![Row Widget](../../../public/assets/android-development/row-widget.png)
+
 The **Row** widget, on the other hand, arranges its children horizontally. It displays a list of widgets side by side, enabling flexible horizontal layouts.
 
 ```dart
-Row(
-  mainAxisAlignment: MainAxisAlignment.spaceAround,
-  children: [
-    Container(
-      color: Colors.orange,
-      width: 100,
-      height: 100,
-      child: Center(child: Text('Row Item 1', style: TextStyle(color: Colors.white))),
-    ),
-    Container(
-      color: Colors.purple,
-      width: 100,
-      height: 100,
-      child: Center(child: Text('Row Item 2', style: TextStyle(color: Colors.white))),
-    ),
-    Container(
-      color: Colors.yellow,
-      width: 100,
-      height: 100,
-      child: Center(child: Text('Row Item 3', style: TextStyle(color: Colors.white))),
-    ),
-  ],
-),
+import 'package:flutter/material.dart';
+
+class MyRowWidget extends StatelessWidget {
+  const MyRowWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.spaceAround,
+      children: [
+        Container(
+          color: Colors.orange,
+          width: 100,
+          height: 100,
+          child: const Center(
+            child: Text(
+              'Row Item 1',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
+        Container(
+          color: Colors.purple,
+          width: 100,
+          height: 100,
+          child: const Center(
+            child: Text(
+              'Row Item 2',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
+        Container(
+          color: Colors.yellow,
+          width: 100,
+          height: 100,
+          child: const Center(
+            child: Text(
+              'Row Item 3',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
 ```
 
 ### Key Properties
@@ -104,26 +166,47 @@ The Row widget is perfect for creating horizontal layouts, such as navigation ba
 
 ## Stack
 
+![Stack Widget](../../../public/assets/android-development/stack-widget.png)
+
 The **Stack** widget enables you to overlay widgets on top of one another. It positions its children relative to the edges of the stack, allowing for complex visual designs where widgets can overlap.
 
 ```dart
-Stack(
-  alignment: Alignment.center,
-  children: [
-    Container(
-      width: 150,
-      height: 150,
-      color: Colors.grey[300],
-      child: Center(child: Text('Background', style: TextStyle(color: Colors.black))),
-    ),
-    Container(
-      width: 100,
-      height: 100,
-      color: Colors.blue,
-      child: Center(child: Text('Overlay', style: TextStyle(color: Colors.white))),
-    ),
-  ],
-),
+import 'package:flutter/material.dart';
+
+class MyStackWidget extends StatelessWidget {
+  const MyStackWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Stack(
+      alignment: Alignment.center,
+      children: [
+        Container(
+          width: 150,
+          height: 150,
+          color: Colors.grey[300],
+          child: const Center(
+            child: Text(
+              'Background',
+              style: TextStyle(color: Colors.black),
+            ),
+          ),
+        ),
+        Container(
+          width: 100,
+          height: 100,
+          color: Colors.blue,
+          child: const Center(
+            child: Text(
+              'Overlay',
+              style: TextStyle(color: Colors.white),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
 ```
 
 ### Key Properties

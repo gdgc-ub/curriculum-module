@@ -9,7 +9,7 @@ export const materi1Sidebar = [
       },
       {
         text: '- Roadmap',
-        link: 'notes/android-development/index',
+        link: 'https://roadmap.sh/r/android-development-gdgc-ub-2024-2025',
       },
     ],
   },

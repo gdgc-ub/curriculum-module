@@ -10,6 +10,15 @@ next:
 
 In Flutter, the building blocks of the user interface are called **widgets**. Everything you see on the screen is a widget, from layout structures to interactive elements like buttons and text fields. Understanding the difference between **Stateless** and **Stateful** widgets is crucial for Flutter development, as it determines how your app responds to user interactions and changes in data.
 
+::: details Overview of the Materials 📚
+
+- **Widgets:** Building blocks of Flutter UI, either Stateless (unchanging) or Stateful (responsive).
+- **Stateless Widgets:** Immutable; suitable for static content like text or icons.
+- **Stateful Widgets:** Mutable, allowing for interaction-based updates; useful for counters, forms, or animations.
+- **Usage:** Use Stateless for simple, static UIs and Stateful for dynamic, user-interactive elements.
+
+:::
+
 ## What are Widgets?
 
 Widgets are the fundamental components used to create the user interface in Flutter. They describe how the application should look and behave. Widgets can be combined to create complex UIs, and they can be nested within each other.
@@ -18,15 +27,19 @@ Flutter categorizes widgets into two main types: **Stateless Widgets** and **Sta
 
 ## Stateless Widgets
 
+![Stateless Widget](../../../public/assets/android-development/stateless-widget.png)
+
 Stateless widgets are immutable, meaning their properties cannot change after they are built. They are ideal for situations where the UI does not depend on any changing data. Stateless widgets are typically used for static content that doesn’t need to be updated in response to user interactions.
 
 ```dart
 import 'package:flutter/material.dart';
 
 class MyStatelessWidget extends StatelessWidget {
+  const MyStatelessWidget({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Center(
+    return const Center(
       child: Text(
         'Hello, Stateless Widget!',
         style: TextStyle(fontSize: 24),
@@ -44,12 +57,16 @@ class MyStatelessWidget extends StatelessWidget {
 
 ## Stateful Widgets
 
+![Statefull Widget](../../../public/assets/android-development/statefull-widget.png)
+
 Stateful widgets, on the other hand, are mutable. They maintain state that can change over time, often in response to user interactions or other factors. A stateful widget is built using two classes: the widget itself and a separate state class that holds the state information.
 
 ```dart
 import 'package:flutter/material.dart';
 
 class MyStatefulWidget extends StatefulWidget {
+  const MyStatefulWidget({super.key});
+
   @override
   _MyStatefulWidgetState createState() => _MyStatefulWidgetState();
 }
@@ -69,16 +86,16 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          Text(
+          const Text(
             'You have pushed the button this many times:',
           ),
           Text(
             '$_counter',
-            style: Theme.of(context).textTheme.headline4,
+            style: Theme.of(context).textTheme.bodyMedium,
           ),
           ElevatedButton(
             onPressed: _incrementCounter,
-            child: Text('Increment'),
+            child: const Text('Increment'),
           ),
         ],
       ),

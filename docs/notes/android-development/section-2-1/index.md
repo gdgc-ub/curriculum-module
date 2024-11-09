@@ -10,6 +10,15 @@ next:
 
 Flutter is a popular open-source UI software development toolkit created by Google. It allows developers to build natively compiled applications for mobile, web, and desktop from a single codebase. In this article, we will guide you through the steps to set up the Flutter SDK and prepare your development environment.
 
+::: details Overview of the Materials 📚
+
+- **Flutter SDK Setup:** Download and install the Flutter SDK for your operating system (Windows, macOS, or Linux), extract it, and add it to your system’s PATH.
+- **Run flutter doctor:** Check for any missing dependencies, such as Android Studio or Xcode, and follow instructions to install them.
+- **Install IDE:** Install Visual Studio Code or Android Studio, and add the Flutter and Dart plugins.
+- **Create First Project:** Use the terminal or IDE to create a new Flutter project and run it to ensure setup is complete.
+
+:::
+
 ## Prerequisites
 
 Before installing Flutter, ensure you have the following prerequisites:
@@ -30,6 +39,8 @@ Before installing Flutter, ensure you have the following prerequisites:
 
 ## Step 2: Update Your Path
 
+![Update Path](../../../public/assets/android-development/update-env-flutter.png)
+
 To run Flutter commands in any terminal session, you need to add the Flutter SDK to your system’s PATH.
 
 ### macOS and Linux
@@ -46,6 +57,8 @@ Add the appropriate line to your shell configuration file (e.g., `.bashrc`, `.zs
 
 ## Step 3: Run Flutter Doctor
 
+![Flutter Doctor](../../../public/assets/android-development/flutter-doctor.png)
+
 After adding Flutter to your PATH, open a terminal and run the command to check for any dependencies you may need to install. The `flutter doctor` command checks your environment and displays a report of the status of your Flutter installation. It may prompt you to install additional tools, such as:
 
 - **Android Studio** (for Android development)
@@ -57,7 +70,12 @@ Follow the instructions to install any missing dependencies.
 
 ### Visual Studio Code
 
+![Download VSCode](../../../public/assets/android-development/download-vscode.png)
+
 1. Download and install [Visual Studio Code](https://code.visualstudio.com/).
+
+![VSCode Plugin](../../../public/assets/android-development/flutter-plugin-1.png)
+
 2. Open Visual Studio Code and install the Flutter and Dart plugins:
    - Go to Extensions.
    - Search for `Flutter` and install the plugin.
@@ -65,14 +83,23 @@ Follow the instructions to install any missing dependencies.
 
 ### Android Studio
 
+![Download Android Studio](../../../public/assets/android-development/download-android-studio.png)
+
 1. Download and install [Android Studio](https://developer.android.com/studio).
 2. During installation, make sure to select the option to install the Android SDK.
+
+![Android Studio Plugin](../../../public/assets/android-development/flutter-plugin-2.png)
+
 3. After installation, open Android Studio and follow these steps to install the Flutter plugin:
    - Go to `File` > `Settings` (or `Android Studio` > `Preferences` on macOS).
    - Select `Plugins` from the sidebar.
    - Search for `Flutter` and install it. The Dart plugin will be installed automatically as well.
 
 ## Step 5: Create Your First Flutter Project
+
+![Create First Project](../../../public/assets/android-development/create-flutter-project.png)
+
+![Open First Project](../../../public/assets/android-development/open-flutter-project.png)
 
 1. Open your terminal or IDE.
 2. Navigate to the directory where you want to create your project.

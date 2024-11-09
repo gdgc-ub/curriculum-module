@@ -10,7 +10,22 @@ next:
 
 Flutter is renowned for its developer-friendly features, among which **Hot Reload** and **Hot Restart** are pivotal for streamlining the development process. These features significantly enhance productivity by allowing developers to see changes in real time, facilitating rapid iteration and debugging. This article explores the differences between Hot Reload and Hot Restart, their use cases, and how they improve the development workflow.
 
+::: details Overview of the Materials 📚
+
+- **Hot Reload** allows developers to instantly see code changes without losing app state, speeding up iteration and UI adjustments.
+- **Hot Restart** restarts the app and resets the app state, useful for global changes or debugging.
+- **Hot Reload** is ideal for UI tweaks, layout changes, and testing features without restarting the app.
+- **Hot Restart** is best for global changes like dependency updates, initialization modifications, and testing the app from the initial state.
+
+:::
+
 ## Hot Reload
+
+![Hot Reload](../../../public/assets/android-development/hot-reload.png)
+
+```
+commands: type "r" (lowercase) in the terminal
+```
 
 **Hot Reload** is a feature that allows developers to instantly see the results of their code changes without losing the current state of the application. When you make changes to your code and save the file, Flutter updates the UI to reflect those changes while preserving the application state, such as variable values, data in forms, and user input.
 
@@ -28,6 +43,12 @@ Flutter is renowned for its developer-friendly features, among which **Hot Reloa
 
 ## Hot Restart
 
+![Hot Restart](../../../public/assets/android-development/hot-restart.png)
+
+```
+commands: type "R" (uppercase) in the terminal
+```
+
 **Hot Restart** is another feature in Flutter that allows developers to restart the application completely while keeping the code changes. However, unlike Hot Reload, Hot Restart does not preserve the application state. It is similar to stopping and starting the app again.
 
 ### Key Benefits of Hot Restart
@@ -44,4 +65,3 @@ Flutter is renowned for its developer-friendly features, among which **Hot Reloa
 ## References
 
 - [Flutter Hot Reload Documentation](https://flutter.dev/docs/development/tools/hot-reload)
-- [Flutter Hot Restart Documentation](https://flutter.dev/docs/development/tools/hot-restart)
