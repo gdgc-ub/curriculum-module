@@ -6,4 +6,4 @@ next:
 
 # 3.4 Styling Widgets (Themes, Text, Colors)
 
-Selamat Datang di Modul Android Development
+Mau bikin masih males wkwk... ntar aja

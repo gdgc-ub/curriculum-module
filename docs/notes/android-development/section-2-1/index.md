@@ -20,6 +20,8 @@ Before installing Flutter, ensure you have the following prerequisites:
 
 ## Step 1: Download the Flutter SDK
 
+![Download Flutter](../../../public/assets/android-development/download-flutter.png)
+
 1. Visit the [official Flutter website](https://flutter.dev/docs/get-started/install).
 2. Choose your operating system and follow the provided instructions to download the Flutter SDK.
 3. Extract the downloaded zip file to a desired location on your machine.

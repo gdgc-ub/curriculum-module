@@ -10,6 +10,15 @@ next:
 
 In any programming language, control flow statements allow you to dictate how the program moves from one point to another based on conditions or repetitive actions. Dart, like most languages, offers several control flow constructs including **`if-else` statements**, **`switch` statements**, and various types of **loops** (for, while, do-while). This section will cover the basic usage of each in Dart.
 
+::: details Overview of the Materials 📚
+
+- **if-else Statements:** Used for conditional execution based on boolean expressions, including else-if for multiple conditions.
+- **switch Statements:** An alternative to if-else for handling multiple cases, useful for matching a value with various possibilities.
+- **Loops:** Includes for, while, and do-while loops for repeating actions, with control statements like break and continue to control loop flow.
+- **Number Guessing Game:** A program that generates a random number between 1 and 100, allowing the user to guess it while providing feedback on whether the guess is too high, too low, or correct, and supports multiple rounds of play.
+
+:::
+
 ## if-else Statements
 
 The **`if-else`** statement is a basic control flow structure used to execute code conditionally. If the condition evaluates to `true`, the code inside the `if` block is executed. If the condition is `false`, the code inside the `else` block (if provided) will run.
@@ -27,6 +36,11 @@ if (number > 0) {
   print('The number is zero');
 }
 ```
+
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.2.1.png" width="400"/>
+:::
 
 ## switch Statements
 
@@ -52,6 +66,11 @@ switch (grade) {
 }
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.2.2.png" width="400"/>
+:::
+
 ## Loops in Dart
 
 Loops allow code to be executed repeatedly as long as a specified condition holds true. Dart provides three types of loops: **for loops**, **while loops**, and **do-while loops**.
@@ -66,6 +85,11 @@ for (int i = 0; i < 5; i++) {
 }
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.2.3.png" width="600"/>
+:::
+
 ### While Loop
 
 The **`while`** loop continues to execute as long as the condition provided remains `true`. The condition is evaluated before each iteration of the loop, and the loop will stop once the condition becomes `false`.
@@ -79,6 +103,11 @@ while (counter < 5) {
 }
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.2.4.png" width="400"/>
+:::
+
 ### Do-While Loop
 
 The **`do-while`** loop is similar to the `while` loop, but the condition is checked after the code block is executed. This ensures that the loop runs at least once, even if the condition is initially `false`.
@@ -91,6 +120,11 @@ do {
   counter++;
 } while (counter < 5);
 ```
+
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.2.5.png" width="400"/>
+:::
 
 ### Loop Control: break and continue
 
@@ -109,13 +143,18 @@ for (int i = 0; i < 10; i++) {
 }
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.2.6.png" width="400"/>
+:::
+
 ## Case Study: Number Guessing Game
 
 ### Introduction
 
 In this case study, we will develop a simple number guessing game using Dart. The game will allow the player to guess a randomly generated number within a specified range. This project will illustrate the practical application of **loops**, **conditional statements**, and user input handling in Dart.
 
-### Problem Statement
+::: details Problem Statement
 
 The program must:
 
@@ -125,7 +164,9 @@ The program must:
 - Allow the user to continue guessing until they find the correct number.
 - Count the number of attempts taken by the player.
 
-### Requirements
+:::
+
+::: details Requirements
 
 1. Generate a random number between 1 and 100 at the start of the game.
 2. Prompt the user for their guess.
@@ -135,13 +176,17 @@ The program must:
    - If the guess is correct, display "Congratulations! You've guessed the number in X attempts."
 4. Allow the user to play multiple rounds until they choose to exit.
 
-### Design
+:::
+
+::: details Design
 
 The program will:
 
 - Use a loop to allow repeated guessing until the user gets the correct answer.
 - Utilize conditionals to provide feedback based on the user's guess.
 - Implement random number generation to create a new number for each game round.
+
+:::
 
 ### Implementation
 

@@ -10,6 +10,16 @@ next:
 
 Object-Oriented Programming (OOP) is a programming paradigm centered around the concept of "objects," which encapsulate data and behavior. Dart, a modern programming language developed by Google, embraces OOP principles, making it suitable for building robust applications across various platforms. This section explores the fundamental OOP concepts in Dart: Classes, Objects, Inheritance, Encapsulation, and Polymorphism.
 
+::: details Overview of the Materials 📚
+
+- **Classes:** Blueprints for creating objects, defining properties (attributes) and methods (functions) that objects can use. A class encapsulates the structure and behavior of an entity.
+- Objects: Instances of a class. Each object has its own state (property values) and can perform actions (invoke methods) defined in its class.
+- **Inheritance:** A mechanism that allows one class (child) to inherit properties and methods from another class (parent), enabling code reuse and creating a hierarchical relationship. Examples include single, multilevel, and hierarchical inheritance.
+- **Encapsulation:** The bundling of data (properties) and methods that operate on the data within a class, restricting direct access to some of the object's components to protect the data. This is done using access modifiers like private (denoted by \_ in Dart) and public.
+- **Polymorphism:** The ability of different objects to respond to the same method in different ways, even if they share the same method name. It can be achieved through method overloading (compile-time polymorphism) and method overriding (runtime polymorphism).
+
+:::
+
 ## Classes
 
 A class in Dart serves as a blueprint for creating objects. It defines properties (attributes) and methods (functions) that the objects created from the class can use. Classes help organize code and represent real-world entities.
@@ -38,7 +48,9 @@ class Person {
 
 - **Methods**: These are functions defined within the class that can manipulate the class properties or perform specific tasks. Methods can take parameters and return values.
 
+::: tip Additional Information
 By using classes, developers can create modular code that mirrors real-world entities, making the codebase easier to maintain and extend.
+:::
 
 ## Objects
 
@@ -56,13 +68,20 @@ void main() {
 }
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.3.1.png" width="600"/>
+:::
+
 ### Characteristics of Objects
 
 - **State**: Each object can have its own unique state determined by the values of its properties. For instance, two `Person` objects can have different names and ages.
 
 - **Behavior**: Objects can perform actions through their methods. Each object can independently call methods defined in its class, allowing for varied behavior.
 
+::: tip Additional Information
 Objects provide a way to encapsulate data and behavior together, enabling more organized and manageable code.
+:::
 
 ## Inheritance
 
@@ -89,6 +108,11 @@ class Dog extends Animal {
 }
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.3.2.png" width="600"/>
+:::
+
 ### Types of Inheritance
 
 - **Single Inheritance**: A class can inherit from only one parent class. Dart supports single inheritance directly.
@@ -101,8 +125,6 @@ class Dog extends Animal {
 
 - **Code Reusability**: Inheritance allows developers to reuse existing code, reducing redundancy.
 - **Method Overriding**: Child classes can provide specific implementations of methods defined in parent classes.
-
-This relationship allows for a more logical structure in code organization.
 
 ## Encapsulation
 
@@ -130,6 +152,11 @@ class BankAccount {
 }
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.3.3.png" width="600"/>
+:::
+
 ### Access Modifiers
 
 In Dart, you can control the visibility of class members (properties and methods) using access modifiers:
@@ -156,6 +183,11 @@ void main() {
 }
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.3.4.png" width="600"/>
+:::
+
 ### Types of Polymorphism
 
 - **Compile-time Polymorphism**: Achieved through method overloading, where multiple methods have the same name but different parameters.
@@ -173,7 +205,7 @@ void main() {
 
 The goal of this case study is to develop a simple bank account application that allows users to create accounts, deposit money, withdraw money, and check account balances. We will utilize Object-Oriented Programming (OOP) principles to create a modular and maintainable application.
 
-### Problem Statement
+::: details Problem Statement
 
 The Bank Account Application should allow:
 
@@ -183,7 +215,9 @@ The Bank Account Application should allow:
 4. Checking the current balance.
 5. Implementing different types of accounts (e.g., Savings Account, Checking Account).
 
-### Design
+:::
+
+::: details Design
 
 The application will consist of the following classes:
 
@@ -191,6 +225,8 @@ The application will consist of the following classes:
 - `SavingsAccount`: A subclass that extends `BankAccount`, with additional features such as interest calculation.
 - `CheckingAccount`: Another subclass that may include features specific to checking accounts (e.g., overdraft protection).
 - `Customer`: A class representing a bank customer.
+
+:::
 
 ### Implementation
 

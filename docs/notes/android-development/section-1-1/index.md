@@ -10,6 +10,15 @@ next:
 
 Dart, the programming language designed by Google, has a clean, modern syntax that is easy to understand and use. In this article, we will explore the foundational concepts of Dart syntax, focusing on **variables**, **data types**, and **functions**. Understanding these basics is essential for anyone looking to develop mobile applications using Dart, especially in combination with Flutter for Android development.
 
+::: details Overview of the Materials 📚
+
+- **Variables:** Declare using var, final, or const. final is for once-set values, const for compile-time constants.
+- **Data Types:** Includes int, double, String, bool, List, and Map.
+- **Functions:** Can have optional parameters (positional or named), and support arrow functions for concise syntax.
+- **Calculator Case Study:** A Dart-based program that performs basic arithmetic operations (addition, subtraction, multiplication, division) with error handling.
+
+:::
+
 ## Variables in Dart
 
 In Dart, variables are used to store data. Variables can be declared with either the `var`, `final`, or `const` keywords, depending on how the variable is going to be used.
@@ -28,6 +37,11 @@ String name = 'Alice';
 int age = 25;
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.1.1.png" width="400"/>
+:::
+
 ### `final` and `const`
 
 - **`final`**: A `final` variable can only be set once. After it is assigned, the value cannot be changed.
@@ -44,7 +58,14 @@ int age = 25;
   const area = pi * 5 * 5; // Using constant values for calculation
   ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.1.2.png" width="600"/>
+:::
+
+::: tip Additional Information
 The main difference between `final` and `const` is that `const` variables must have their value known at compile time, while `final` variables can be initialized at runtime but not modified afterward.
+:::
 
 ## Data Types in Dart
 
@@ -77,6 +98,11 @@ String lastName = "Doe";
 String greeting = 'Hello, $firstName $lastName';
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.1.3.png" width="400"/>
+:::
+
 ### 3. **Booleans**
 
 Booleans represent values that are either `true` or `false`. They are used in conditions and logic.
@@ -97,6 +123,11 @@ List<String> fruits = ['Apple', 'Banana', 'Orange'];
 var numbers = [1, 2, 3, 4, 5]; // Dart infers it as List<int>
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.1.4.png" width="600"/>
+:::
+
 ### 5. **Maps**
 
 A `Map` is a collection of key-value pairs. It is similar to a dictionary in other programming languages. You can access values by their keys.
@@ -112,6 +143,11 @@ Map<String, int> ages = {
 int aliceAge = ages['Alice']; // 30
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.1.5.png" width="400"/>
+:::
+
 ## Functions in Dart
 
 Functions are a central part of Dart programming. A function is a block of reusable code that can be called to perform a specific task.
@@ -125,6 +161,11 @@ int add(int a, int b) {
   return a + b;
 }
 ```
+
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.1.6.png" width="400"/>
+:::
 
 ### Function Without Return Type
 
@@ -155,6 +196,11 @@ void main() {
 }
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.1.7.png" width="600"/>
+:::
+
 #### 2. **Named Optional Parameters**
 
 Named parameters are enclosed in curly braces and can be marked as optional by providing default values.
@@ -170,6 +216,11 @@ void main() {
 }
 ```
 
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.1.8.png" width="600"/>
+:::
+
 ### Arrow Functions
 
 For functions that contain a single expression, Dart provides a shorthand syntax called **arrow functions**. Arrow functions are a more concise way to declare simple functions.
@@ -177,6 +228,11 @@ For functions that contain a single expression, Dart provides a shorthand syntax
 ```dart
 int multiply(int a, int b) => a * b;
 ```
+
+::: details DartPad Output
+<br>
+<img src="../../../public/assets/android-development/dartpad_1.1.9.png" width="600"/>
+:::
 
 ### Anonymous Functions
 
@@ -196,7 +252,7 @@ fruits.forEach((fruit) {
 
 In this case study, we will design and implement a simple calculator program using Dart. This calculator will perform basic arithmetic operations, including addition, subtraction, multiplication, and division. The goal is to provide users with an interactive command-line interface to input numbers and choose operations.
 
-### Problem Statement
+::: details Problem Statement
 
 The calculator needs to perform the following operations based on user input:
 
@@ -205,20 +261,26 @@ The calculator needs to perform the following operations based on user input:
 - Multiplication
 - Division
 
-### Requirements
+:::
+
+::: details Requirements
 
 1. The program should prompt the user to enter two numbers.
 2. The user should select an arithmetic operation (addition, subtraction, multiplication, or division).
 3. The program should display the result of the operation.
 4. It should handle invalid input gracefully, informing the user of any errors.
 
-### Design
+:::
+
+::: details Design
 
 The calculator will be designed with the following components:
 
 - A function to perform the chosen arithmetic operation.
 - A function to display the menu and get user input.
 - A main function to drive the application and handle control flow.
+
+:::
 
 ### Implementation
 

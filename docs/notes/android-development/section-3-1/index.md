@@ -6,4 +6,4 @@ next:
 
 # 3.1 Understanding the Widget Tree
 
-Selamat Datang di Modul Android Development
+Mau bikin masih males wkwk... ntar aja

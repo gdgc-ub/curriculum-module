@@ -6,4 +6,4 @@ next:
 
 # 3.2 Building Layouts (Flexible, Stack, Container)
 
-Selamat Datang di Modul Android Development
+Mau bikin masih males wkwk... ntar aja
