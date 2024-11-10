@@ -5,6 +5,10 @@ layout: home
 hero:
   name: 'GDGOC UB Module'
   tagline: 'Built by the community, for the community.'
+  actions:
+    - theme: brand
+      text: Past Events
+      link: /past-events
 
 features:
   - title: UI/UX

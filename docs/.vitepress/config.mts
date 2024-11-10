@@ -6,6 +6,7 @@ import { materi1Sidebar as CloudMateri1Sidebar } from '../models/sidebar/cloud-d
 import { materi1Sidebar as AndroidMateri1Sidebar } from '../models/sidebar/android-development/materi1-sidebar'
 import { uiUXSidebar } from '../models/sidebar/ui-ux/UIUXSidebar'
 import { PMSidebar } from '../models/sidebar/product-management/PMSidebar'
+import { pastEventsSidebar } from '../models/sidebar/past-events/pastEventsSidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -31,6 +32,7 @@ export default defineConfig({
       "/notes/android-development": AndroidMateri1Sidebar,
       "/notes/web-development": WebMateri1Sidebar,
       "/notes/machine-learning": MLMateri1Sidebar,
+      "/past-events/": pastEventsSidebar
     },
 
     socialLinks: [
