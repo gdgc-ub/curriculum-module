@@ -5,13 +5,6 @@ layout: home
 hero:
   name: 'GDGOC UB Module'
   tagline: 'Built by the community, for the community.'
-  actions:
-    - theme: brand
-      text: Markdown Examples
-      link: /markdown-examples
-    - theme: alt
-      text: API Examples
-      link: /api-examples
 
 features:
   - title: UI/UX

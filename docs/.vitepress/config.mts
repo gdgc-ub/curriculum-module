@@ -1,11 +1,11 @@
 import { defineConfig } from 'vitepress'
 // Sidebar
 import { materi1Sidebar as WebMateri1Sidebar } from '../models/sidebar/web-development/materi1-sidebar'
-import { materi1Sidebar as PMMateri1Sidebar } from '../models/sidebar/product-management/materi1-sidebar'
 import { materi1Sidebar as MLMateri1Sidebar } from '../models/sidebar/machine-learning/materi1-sidebar'
 import { materi1Sidebar as CloudMateri1Sidebar } from '../models/sidebar/cloud-development/materi1-sidebar'
 import { materi1Sidebar as AndroidMateri1Sidebar } from '../models/sidebar/android-development/materi1-sidebar'
-import { materi1Sidebar as UIUXMateri1Sidebar } from '../models/sidebar/ui-ux/materi1-sidebar'
+import { uiUXSidebar } from '../models/sidebar/ui-ux/UIUXSidebar'
+import { PMSidebar } from '../models/sidebar/product-management/PMSidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -16,7 +16,7 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     logo: '/assets/gdgoc-logo.png',
     nav: [
-      { text: 'Ui/UX', link: '/notes/ui-ux' },
+      { text: 'UI/UX', link: '/notes/ui-ux' },
       { text: 'Product Management', link: '/notes/product-management' },
       { text: 'Android', link: '/notes/android-development' },
       { text: 'Web', link: '/notes/web-development' },
@@ -25,8 +25,8 @@ export default defineConfig({
     ],
 
     sidebar: {
-      "/notes/ui-ux": UIUXMateri1Sidebar,
-      "/notes/product-management": PMMateri1Sidebar,
+      "/notes/ui-ux": uiUXSidebar,
+      "/notes/product-management": PMSidebar,
       "/notes/cloud-development": CloudMateri1Sidebar,
       "/notes/android-development": AndroidMateri1Sidebar,
       "/notes/web-development": WebMateri1Sidebar,
