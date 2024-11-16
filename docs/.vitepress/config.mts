@@ -2,11 +2,11 @@ import { defineConfig } from 'vitepress'
 // Sidebar
 import { materi1Sidebar as WebMateri1Sidebar } from '../models/sidebar/web-development/materi1-sidebar'
 import { materi1Sidebar as MLMateri1Sidebar } from '../models/sidebar/machine-learning/materi1-sidebar'
-import { materi1Sidebar as CloudMateri1Sidebar } from '../models/sidebar/cloud-development/materi1-sidebar'
+import { CloudSidebar } from '../models/sidebar/cloud-development/CloudSidebar'
 import { materi1Sidebar as AndroidMateri1Sidebar } from '../models/sidebar/android-development/materi1-sidebar'
 import { uiUXSidebar } from '../models/sidebar/ui-ux/UIUXSidebar'
 import { PMSidebar } from '../models/sidebar/product-management/PMSidebar'
-import { pastEventsSidebar } from '../models/sidebar/past-events/pastEventsSidebar'
+import { PastEventsSidebar } from '../models/sidebar/past-events/PastEventsSidebar'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
@@ -28,11 +28,11 @@ export default defineConfig({
     sidebar: {
       "/notes/ui-ux": uiUXSidebar,
       "/notes/product-management": PMSidebar,
-      "/notes/cloud-development": CloudMateri1Sidebar,
+      "/notes/cloud-development": CloudSidebar,
       "/notes/android-development": AndroidMateri1Sidebar,
       "/notes/web-development": WebMateri1Sidebar,
       "/notes/machine-learning": MLMateri1Sidebar,
-      "/past-events/": pastEventsSidebar
+      "/past-events/": PastEventsSidebar
     },
 
     socialLinks: [
