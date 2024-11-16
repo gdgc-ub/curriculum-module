@@ -52,7 +52,7 @@ Virtualization excels in environments where strong isolation between application
 
 ### IaaS
 
-Infrastructure as a Service is a cloud computing model where resources like virtual machines, storage and networks are provided as a servivces. Virtualization is the core technology behind IaaS. It allows cloud providers to efficiently utilize their hardware resources by running multiple VMs on the same physical hardware. One of the best IaaS example in GCP is Google Compute Engine
+Infrastructure as a Service is a cloud computing model where resources like virtual machines, storage and networks are provided as a servivces. Virtualization is the core technology behind IaaS. It allows cloud providers to efficiently utilize their hardware resources by running multiple VMs on the same physical hardware. Server examples of IaaS in GCP are [Google Compute Engine](https://cloud.google.com/products/compute?hl=en), [Google Cloud Storage](https://cloud.google.com/storage/?hl=en) and [Google Cloud DNS](https://cloud.google.com/dns/?hl=en)
 
 ## Containerization Use Cases
 
@@ -72,5 +72,5 @@ Containers are a perfect fit for microservices. They provide a standardized envi
 
 ### PaaS
 
-Platform as a Service (PaaS) is a cloud computing model where a provider delivers a platform for developers to build, test, and deploy applications. This platform typically includes an operating system, middleware, and runtime environment. Containerization is an integral part of PaaS. It allows providers to efficiently utilize their resources by running multiple containers on the same host. Several examples of Paas in GCP are App Engine and Cloud Run
+Platform as a Service (PaaS) is a cloud computing model where a provider delivers a platform for developers to build, test, and deploy applications. This platform typically includes an operating system, middleware, and runtime environment. Containerization is an integral part of PaaS. It allows providers to efficiently utilize their resources by running multiple containers on the same host. Several examples of PaaS in GCP are [App Engine](https://cloud.google.com/appengine/?hl=en) and [Cloud Run](https://cloud.google.com/run?hl=en)
 
