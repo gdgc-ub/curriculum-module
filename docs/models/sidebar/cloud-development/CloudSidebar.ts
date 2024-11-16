@@ -23,10 +23,8 @@ export const CloudSidebar = [
       text: 'Create Your First VM',
       items: [
         { text: "Introduction with Virtual Box", link: `${CLOUD_NOTE_PATH}/your-first-vm/intro-vbox` },
-        { text: "Download Tools", link: `${CLOUD_NOTE_PATH}/your-first-vm/download-tools` },
+        { text: "Tools Installation", link: `${CLOUD_NOTE_PATH}/your-first-vm/tools-installation` },
         { text: "Create Virtual Machine", link: `${CLOUD_NOTE_PATH}/your-first-vm/create-vm` },
-        { text: "Configure VM Network", link: `${CLOUD_NOTE_PATH}/your-first-vm/configure-network` },
-        { text: "Access Your VM from Host", link: `${CLOUD_NOTE_PATH}/your-first-vm/access-from-host` }
       ]
     },
 ]  
