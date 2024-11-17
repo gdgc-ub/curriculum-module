@@ -1,6 +1,6 @@
 # Interacting with Google Cloud Services
 
-Now that we now serveral services provided by GCP, how do we interact with them? Fortunately, Google Cloud gives us three basic ways to interact with the services and resources.
+Now that we know serveral services provided by GCP, how do we interact with them? Fortunately, Google Cloud gives us three basic ways to interact with the services and resources.
 
 ## Google Cloud Console
 

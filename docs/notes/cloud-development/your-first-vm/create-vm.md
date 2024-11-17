@@ -2,7 +2,7 @@
 
 Congratulations! you are on half way having your first virtual machine. Now let's begin actually really creating virtual machine using VirtualBox. 
 
-However since we are trying to create virtual computer inside our computer, i strongly advised to have the recommended requirements to ensure everything will go smooth and quick. If you don't have the minimum requirement, you can still follow the guides with albeit a little or major lag will interrupt you.
+However since we are trying to create virtual computer inside our computer, i strongly advised to have the recommended system requirements to ensure everything will go smooth and quick. If you don't have the recommended system requirements, you can still follow the guides with albeit a little or major lag will interrupt you.
 
 Recommended Specification Requirements
 - CPU : 4 Cores
@@ -131,12 +131,19 @@ To remote access our virtual machine, there are a couple things we need to do.
 
     Click OK and then OK again.
 
+    ::: tip INFO 
+    For the host port, you can fill with whatever port number as long as the port in the host computer is free. In linux, you can check whether a port is free by typing the following command. If the output is ```Connection refused``` it means the port is free to use. 
+    ```zsh
+    nc -zv localhost 5173
+    ```
+    :::
+
 4. Remote Access with SSH
 
-    Now finally open your host terminal and type the following command. The -p flag specify the port. If we don't include that flag, it will use the default value which is 22
+    Now finally open your host terminal and type the following command to SSH to your virtual machine. The -p flag specify the port. If we don't include that flag, it will use the default value which is 22. Since the virtual machine is running inside the same computer, you can fill the VM IP Address with ```localhost```
 
     ```zsh
-    ssh [YOUR VM USERNAME]@localhost -p 2210
+    ssh [YOUR VM USERNAME]@[YOUR VM IP ADDRESS] -p 2210
     ```
 
     ![img](../../../public/assets/cloud-development/your-first-vm/ssh11.png)    
