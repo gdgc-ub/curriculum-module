@@ -1,5 +1,5 @@
 // https://vitepress.dev/reference/default-theme-sidebar
-export const pastEventsSidebar = [
+export const PastEventsSidebar = [
   {
     text: 'Onboarding👋',
     items: [
