@@ -51,11 +51,11 @@ export const CloudSidebar = [
     items: [
       {
         text: 'Virtualization',
-        link: `${CLOUD_NOTE_PATH}/3-virtualization-vs-containerization/3.1-containerization`,
+        link: `${CLOUD_NOTE_PATH}/3-virtualization-vs-containerization/3.1-virtualization`,
       },
       {
         text: 'Containerization',
-        link: `${CLOUD_NOTE_PATH}/3-virtualization-vs-containerization/3.2-virtualization`,
+        link: `${CLOUD_NOTE_PATH}/3-virtualization-vs-containerization/3.2-containerization`,
       },
       {
         text: 'Key Differences',
