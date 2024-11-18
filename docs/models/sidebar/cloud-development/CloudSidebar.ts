@@ -15,27 +15,23 @@ export const CloudSidebar = [
     items: [
       {
         text: 'What is Cloud Computing',
-        link: `${CLOUD_NOTE_PATH}/1-cloud-computing/1.1-what-is-cloud`,
-      },
-      {
-        text: 'Drawbacks of Traditional Cloud',
-        link: `${CLOUD_NOTE_PATH}/1-cloud-computing/1.2-drawbacks-traditional-cloud`,
+        link: `${CLOUD_NOTE_PATH}/1-cloud/1.1-what-is-cloud`,
       },
       {
         text: 'Characteristics of Cloud Computing',
-        link: `${CLOUD_NOTE_PATH}/1-cloud-computing/1.3-characteristics-cloud`,
+        link: `${CLOUD_NOTE_PATH}/1-cloud/1.2-characteristics-cloud`,
       },
       {
         text: 'Benefits of Cloud Computing',
-        link: `${CLOUD_NOTE_PATH}/1-cloud-computing/1.4-benefits-cloud`,
+        link: `${CLOUD_NOTE_PATH}/1-cloud/1.3-benefits-cloud`,
       },
       {
         text: 'Cloud Service Models',
-        link: `${CLOUD_NOTE_PATH}/1-cloud-computing/1.5-cloud-service-models`,
+        link: `${CLOUD_NOTE_PATH}/1-cloud/1.4-cloud-service-models`,
       },
       {
         text: 'Application of Cloud',
-        link: `${CLOUD_NOTE_PATH}/1-cloud-computing/1.6-application-of-cloud`,
+        link: `${CLOUD_NOTE_PATH}/1-cloud/1.5-application-of-clouds`,
       },
     ],
   },
