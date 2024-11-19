@@ -11,26 +11,26 @@ export const CloudSidebar = [
     ],
   },
   {
-    text: 'Cloud Computing',
+    text: '1) Cloud Computing ☁️',
     items: [
       {
-        text: 'What is Cloud Computing',
+        text: '1.1) What is Cloud Computing',
         link: `${CLOUD_NOTE_PATH}/1-cloud/1.1-what-is-cloud`,
       },
       {
-        text: 'Characteristics of Cloud Computing',
+        text: '1.2) Characteristics of Cloud Computing',
         link: `${CLOUD_NOTE_PATH}/1-cloud/1.2-characteristics-cloud`,
       },
       {
-        text: 'Benefits of Cloud Computing',
+        text: '1.3) Benefits of Cloud Computing',
         link: `${CLOUD_NOTE_PATH}/1-cloud/1.3-benefits-cloud`,
       },
       {
-        text: 'Cloud Service Models',
+        text: '1.4) Cloud Service Models',
         link: `${CLOUD_NOTE_PATH}/1-cloud/1.4-cloud-service-models`,
       },
       {
-        text: 'Application of Cloud',
+        text: '1.5) Application of Cloud',
         link: `${CLOUD_NOTE_PATH}/1-cloud/1.5-application-of-clouds`,
       },
     ],
