@@ -81,6 +81,28 @@ export const CloudSidebar = [
     ],
   },
   {
-    text: 'Containerization',
+    text: '5) Docker 🐳',
+    items: [
+      {
+        text: '5.1) What is Docker',
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.1-what-is-docker`,
+      },
+      {
+        text: '5.2) Docker Architecture',
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.2-docker-architecture`,
+      },
+      {
+        text: '5.3) Docker Commands',
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.3-docker-commands`,
+      },
+      {
+        text: '5.4) Dockerfile',
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.4-dockerfile`,
+      },
+      {
+        text: '5.5) Docker Compose',
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.5-docker-compose`,
+      },
+    ],
   },
 ];
