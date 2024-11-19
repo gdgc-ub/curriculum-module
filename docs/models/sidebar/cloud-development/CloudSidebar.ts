@@ -36,46 +36,46 @@ export const CloudSidebar = [
     ],
   },
   {
-    text: 'Introduction with GCP',
+    text: '2) Introduction with GCP',
     items: [
-      { text: 'What is GCP', link: `${CLOUD_NOTE_PATH}/2-intro-gcp/2.1-what-is-gcp` },
-      { text: 'GCP Products', link: `${CLOUD_NOTE_PATH}/2-intro-gcp/2.2-gcp-products` },
+      { text: '2.1) What is GCP', link: `${CLOUD_NOTE_PATH}/2-intro-gcp/2.1-what-is-gcp` },
+      { text: '2.2) GCP Products', link: `${CLOUD_NOTE_PATH}/2-intro-gcp/2.2-gcp-products` },
       {
-        text: 'Interacting with GCP',
+        text: '2.3) Interacting with GCP',
         link: `${CLOUD_NOTE_PATH}/2-intro-gcp/2.3-interacting-with-gcp`,
       },
     ],
   },
   {
-    text: 'Virtualization vs Containerization',
+    text: '3) Virtualization vs Containerization',
     items: [
       {
-        text: 'Virtualization',
+        text: '3.1) Virtualization',
         link: `${CLOUD_NOTE_PATH}/3-virtualization-vs-containerization/3.1-virtualization`,
       },
       {
-        text: 'Containerization',
+        text: '3.2) Containerization',
         link: `${CLOUD_NOTE_PATH}/3-virtualization-vs-containerization/3.2-containerization`,
       },
       {
-        text: 'Key Differences',
+        text: '3.3) Key Differences',
         link: `${CLOUD_NOTE_PATH}/3-virtualization-vs-containerization/3.3-differences-virtualization-containerization`,
       },
     ],
   },
   {
-    text: 'Create Your First VM',
+    text: '4) Create Your First VM',
     items: [
       {
-        text: 'Introduction with Virtual Box',
+        text: '4.1) Introduction with Virtual Box',
         link: `${CLOUD_NOTE_PATH}/4-virtual-machine/4.1-intro-virtual-box`,
       },
       {
-        text: 'Tools Installation',
+        text: '4.2) Tools Installation',
         link: `${CLOUD_NOTE_PATH}/4-virtual-machine/4.2-tools-installation`,
       },
       {
-        text: 'Create Virtual Machine',
+        text: '4.3) Create Virtual Machine',
         link: `${CLOUD_NOTE_PATH}/4-virtual-machine/4.3-create-virtual-machine`,
       },
     ],
