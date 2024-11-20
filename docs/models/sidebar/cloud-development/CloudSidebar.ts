@@ -85,23 +85,31 @@ export const CloudSidebar = [
     items: [
       {
         text: '5.1) What is Docker',
-        link: `${CLOUD_NOTE_PATH}/5-docker/5.1-what-is-docker`,
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.1-introduction-docker`,
       },
       {
-        text: '5.2) Docker Architecture',
-        link: `${CLOUD_NOTE_PATH}/5-docker/5.2-docker-architecture`,
+        text: '5.2) Docker Basic',
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.2-docker-basic`,
       },
       {
-        text: '5.3) Docker Commands',
-        link: `${CLOUD_NOTE_PATH}/5-docker/5.3-docker-commands`,
+        text: '5.3) Docker Container',
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.3-docker-container`,
       },
       {
-        text: '5.4) Dockerfile',
-        link: `${CLOUD_NOTE_PATH}/5-docker/5.4-dockerfile`,
+        text: '5.4) Docker Volume',
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.4-docker-volume`,
       },
       {
-        text: '5.5) Docker Compose',
-        link: `${CLOUD_NOTE_PATH}/5-docker/5.5-docker-compose`,
+        text: '5.5) Docker Network',
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.5-docker-network`,
+      },
+      {
+        text: '5.6) Docker File',
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.6-docker-file`,
+      },
+      {
+        text: '5.7) Docker Compose',
+        link: `${CLOUD_NOTE_PATH}/5-docker/5.7-docker-compose`,
       },
     ],
   },
