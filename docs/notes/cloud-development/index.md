@@ -1,9 +1,10 @@
----
-next:
-  text: 'Materi 1'
-  link: '/notes/cloud-development/materi-1'
----
+<script setup>
+import { useRouter } from 'vitepress';
 
-# Cloud Development
+const router = useRouter();
 
-Selamat Datang di Modul Cloud Development
+router.go('/notes/cloud-development/0-greetings/0.1-about.html')
+
+</script>
+
+# Redirecting you to our welcoming page...
