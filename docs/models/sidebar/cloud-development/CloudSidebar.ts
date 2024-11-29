@@ -126,15 +126,19 @@ export const CloudSidebar = [
       },
       {
         text: '6.4) Linux Files Operations',
-        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.4-linux-file-operations`
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.4-file-operations`
       },
       {
-        text: '6.5) System Management',
-        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.4-linux-file-operations`
+        text: '6.5) File Permissions',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.5-file-permissions`
+      },
+      {
+        text: '6.6) System Management',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.6-system-management`
       },
       {
         text: '6.8) Shell Scripting',
-        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.6-shell-scripting`
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.8-shell-scripting`
       }
     ]
   }
