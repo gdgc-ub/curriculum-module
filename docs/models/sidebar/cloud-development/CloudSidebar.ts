@@ -121,8 +121,8 @@ export const CloudSidebar = [
         link: `${CLOUD_NOTE_PATH}/6-linux-101/6.2-linux-filesystems`
       },
       {
-        text: '6.3) Files Hierarchy Structure',
-        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.3-linux-file-hierarchy`
+        text: '6.3) File Hierarchy Structure',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.3-file-hierarchy`
       },
       {
         text: '6.4) Linux Files Operations',
