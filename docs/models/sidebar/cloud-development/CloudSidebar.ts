@@ -113,4 +113,29 @@ export const CloudSidebar = [
       },
     ],
   },
+  {
+    text: '6) Linux 101 🐧',
+    items: [
+      {
+        text: '6.2) Linux Filesystem',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.2-linux-filesystems`
+      },
+      {
+        text: '6.3) Files Hierarchy Structure',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.3-linux-file-hierarchy`
+      },
+      {
+        text: '6.4) Linux Files Operations',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.4-linux-file-operations`
+      },
+      {
+        text: '6.5) System Management',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.4-linux-file-operations`
+      },
+      {
+        text: '6.8) Shell Scripting',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.6-shell-scripting`
+      }
+    ]
+  }
 ];
