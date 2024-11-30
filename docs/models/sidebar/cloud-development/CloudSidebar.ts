@@ -113,4 +113,45 @@ export const CloudSidebar = [
       },
     ],
   },
+  {
+    text: '6) Linux 101 🐧',
+    items: [
+      {
+        text: '6.1) Introduction to Linux',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.1-intro-linux`,
+      },
+      {
+        text: '6.2) Filesystem',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.2-linux-filesystems`,
+      },
+      {
+        text: '6.3) File Hierarchy Structure',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.3-file-hierarchy`,
+      },
+      {
+        text: '6.4) Files Operations',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.4-file-operations`,
+      },
+      {
+        text: '6.5) File Permissions',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.5-file-permissions`,
+      },
+      {
+        text: '6.6) System Management',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.6-system-management`,
+      },
+      {
+        text: '6.8) Shell Scripting',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.8-shell-scripting`,
+      },
+      {
+        text: '6.9) Linux Networking',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.9-linux-network`,
+      },
+      {
+        text: '6.10) Linux Security',
+        link: `${CLOUD_NOTE_PATH}/6-linux-101/6.10-linux-security`,
+      },
+    ],
+  },
 ];

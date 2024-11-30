@@ -44,5 +44,4 @@ export default defineConfig({
       provider: 'local'
     },
   },
-  lastUpdated: true
 })
