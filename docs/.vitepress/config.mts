@@ -1,6 +1,6 @@
 import { defineConfig } from 'vitepress'
 // Sidebar
-import { materi1Sidebar as WebMateri1Sidebar } from '../models/sidebar/web-development/materi1-sidebar'
+import { WebSidebar } from '../models/sidebar/web-development/materi1-sidebar'
 import { materi1Sidebar as PMMateri1Sidebar } from '../models/sidebar/product-management/materi1-sidebar'
 import { materi1Sidebar as MLMateri1Sidebar } from '../models/sidebar/machine-learning/materi1-sidebar'
 import { materi1Sidebar as CloudMateri1Sidebar } from '../models/sidebar/cloud-development/materi1-sidebar'
@@ -29,7 +29,7 @@ export default defineConfig({
       "/notes/product-management": PMMateri1Sidebar,
       "/notes/cloud-development": CloudMateri1Sidebar,
       "/notes/android-development": AndroidMateri1Sidebar,
-      "/notes/web-development": WebMateri1Sidebar,
+      "/notes/web-development": WebSidebar,
       "/notes/machine-learning": MLMateri1Sidebar,
     },
 
