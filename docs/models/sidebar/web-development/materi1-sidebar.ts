@@ -30,9 +30,9 @@ export const WebSidebar = [
       text: 'CSS FrameWork',
       items: [
         {text: 'What Is Tailwind CSS', link: `${WEB_NOTE_PATH}/front-end/3-css-framework/3.1-what-is-tailwind` },
-        {text: 'Tailwind CSS Basic', link: `${WEB_NOTE_PATH}/front-end/1-html/3.2-tailwind-basic` },
-        {text: 'Making Layout With Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/1-html/3.3-tailwind-layout` },
-        {text: 'Responsive Desain Use Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/1-html/3.4-` },
+        {text: 'Tailwind CSS Basic', link: `${WEB_NOTE_PATH}/front-end/3-css-framework/3.2-tailwind-basic` },
+        {text: 'Making Layout With Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/3-css-framework/3.3-tailwind-layout` },
+        {text: 'Responsive Desain Use Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/3-css-framework/3.4-responsive-desain` },
       ]
     },
 
