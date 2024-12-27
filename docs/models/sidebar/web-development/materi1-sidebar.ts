@@ -22,7 +22,7 @@ export const WebSidebar = [
       text: 'CSS',
       items: [
         {text: 'Basic CSS', link: `${WEB_NOTE_PATH}/front-end/2-css/2.1-css-basic` },
-        {text: 'Making Layouts Use Css', link: `${WEB_NOTE_PATH}/front-end/2-css/2.2-css-layout` },
+        {text: 'CSS Layout Model', link: `${WEB_NOTE_PATH}/front-end/2-css/2.2-css-flexbox` },
       ]
     },
 
