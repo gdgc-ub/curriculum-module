@@ -27,30 +27,29 @@ export const WebSidebar = [
     },
 
     {
-      text: 'CSS FrameWork',
-      items: [
-        {text: 'What Is Tailwind CSS', link: `${WEB_NOTE_PATH}/front-end/3-css-framework/3.1-what-is-tailwind` },
-        {text: 'Tailwind CSS Basic', link: `${WEB_NOTE_PATH}/front-end/3-css-framework/3.2-tailwind-basic` },
-        {text: 'Making Layout With Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/3-css-framework/3.3-tailwind-layout` },
-        {text: 'Responsive Desain Use Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/3-css-framework/3.4-responsive-desain` },
-      ]
-    },
-
-    {
       text: 'Java Script',
       items: [
-        {text: 'java Script Basic Syntax', link: `${WEB_NOTE_PATH}/front-end/4-java-script/4.1-js-basic` },
-        {text: 'What is DOM', link:  `${WEB_NOTE_PATH}/front-end/4-java-script/4.2-Dom-Manipulation` },
+        {text: 'java Script Basic Syntax', link: `${WEB_NOTE_PATH}/front-end/3-java-script/3.1-js-basic` },
+        {text: 'What is DOM', link:  `${WEB_NOTE_PATH}/front-end/3-java-script/3.2-Dom-Manipulation` },
       ]
     },
 
     {
       text: 'React Js',
       items: [
-        {text: 'React Components ', link: `${WEB_NOTE_PATH}/front-end/5-react/5.1-react-components` },
-        {text: 'React Hooks ', link: `${WEB_NOTE_PATH}/front-end/5-react/5.2-react-hooks` },
-        {text: 'React Router ', link: `${WEB_NOTE_PATH}/front-end/5-react/5.3-react-router` },
-        {text: 'React Querry ', link: `${WEB_NOTE_PATH}/front-end/5-react/5.4-react-Querry` },
+        {text: 'React Components ', link: `${WEB_NOTE_PATH}/front-end/4-react/4.1-react-components` },
+        {text: 'React Hooks ', link: `${WEB_NOTE_PATH}/front-end/4-react/4.2-react-hooks` },
+        {text: 'React Router ', link: `${WEB_NOTE_PATH}/front-end/4-react/4.3-react-router` },
+        {text: 'React Querry ', link: `${WEB_NOTE_PATH}/front-end/4-react/4.4-react-Querry` },
+      ]
+    },
+
+    {
+      text: 'CSS FrameWork',
+      items: [
+        {text: 'What Is Tailwind CSS', link: `${WEB_NOTE_PATH}/front-end/5-css-framework/5.1-what-is-tailwind` },
+        {text: 'Making Layout With Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/5-css-framework/5.2-tailwind-layout` },
+        {text: 'Responsive Desain Use Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/5-css-framework/5.3-responsive-desain` },
       ]
     },
 
