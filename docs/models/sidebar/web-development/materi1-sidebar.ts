@@ -12,6 +12,13 @@ export const WebSidebar = [
     },
 
     {
+      text: 'Introduction',
+      items: [
+        { text: 'How To Display HTML, CSS, and JS Code', link: `${WEB_NOTE_PATH}/index.md` },
+      ]
+  },
+
+    {
       text: 'HTML ',
       items: [
         { text: 'HTML Basic ', link: `${WEB_NOTE_PATH}/front-end/1-html/1.1-basic-html` },
