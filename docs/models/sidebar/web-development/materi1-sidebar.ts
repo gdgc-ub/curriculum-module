@@ -42,30 +42,37 @@ export const WebSidebar = [
     },
 
     {
+      text: 'Axios',
+      items: [
+        {text: 'All About Axios', link: `${WEB_NOTE_PATH}/front-end/4-axios/4.1-all-about-axios` },
+      ]
+    },
+
+    {
       text: 'React Js',
       items: [
-        {text: 'React Components ', link: `${WEB_NOTE_PATH}/front-end/4-react/4.1-react-components` },
-        {text: 'React Hooks ', link: `${WEB_NOTE_PATH}/front-end/4-react/4.2-react-hooks` },
-        {text: 'React Router ', link: `${WEB_NOTE_PATH}/front-end/4-react/4.3-react-router` },
-        {text: 'React Querry ', link: `${WEB_NOTE_PATH}/front-end/4-react/4.4-react-Querry` },
+        {text: 'React Components ', link: `${WEB_NOTE_PATH}/front-end/4-react/5.1-react-components` },
+        {text: 'React Hooks ', link: `${WEB_NOTE_PATH}/front-end/4-react/5.2-react-hooks` },
+        {text: 'React Router ', link: `${WEB_NOTE_PATH}/front-end/4-react/5.3-react-router` },
+        {text: 'React Querry ', link: `${WEB_NOTE_PATH}/front-end/4-react/5.4-react-Querry` },
       ]
     },
 
     {
       text: 'CSS FrameWork',
       items: [
-        {text: 'What Is Tailwind CSS', link: `${WEB_NOTE_PATH}/front-end/5-css-framework/5.1-what-is-tailwind` },
-        {text: 'Making Layout With Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/5-css-framework/5.2-tailwind-layout` },
-        {text: 'Responsive Desain Use Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/5-css-framework/5.3-responsive-desain` },
+        {text: 'What Is Tailwind CSS', link: `${WEB_NOTE_PATH}/front-end/5-css-framework/6.1-what-is-tailwind` },
+        {text: 'Making Layout With Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/5-css-framework/6.2-tailwind-layout` },
+        {text: 'Responsive Desain Use Tailwind Css', link: `${WEB_NOTE_PATH}/front-end/5-css-framework/6.3-responsive-desain` },
       ]
     },
 
     {
       text: 'Type Checker',
       items: [
-        {text: 'What is TypeChecker ', link: `${WEB_NOTE_PATH}/front-end/6-typechecker/6.1-what-is-typechecker` },
-        {text: 'What is TypeScript', link: `${WEB_NOTE_PATH}/front-end/6-typechecker/6.2-what-is-typescript` },
-        {text: 'TypeScript Vs JavaScript', link: `${WEB_NOTE_PATH}/front-end/6-typechecker/6.3-typescript-vs-javascript` },
+        {text: 'What is TypeChecker ', link: `${WEB_NOTE_PATH}/front-end/` },
+        {text: 'What is TypeScript', link: `${WEB_NOTE_PATH}/front-end/` },
+        {text: 'TypeScript Vs JavaScript', link: `${WEB_NOTE_PATH}/front-end/` },
       ]
     },
 
